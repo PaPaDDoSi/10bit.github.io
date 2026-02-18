@@ -442,6 +442,17 @@
       tile.appendChild(label);
       coverGrid.appendChild(tile);
     });
+
+    // Smooth scroll for hero-down button
+    document.querySelectorAll('a[href="#work"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const workSection = document.getElementById('work');
+        if (workSection) {
+          workSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
   </script>
 </body>
 </html>
