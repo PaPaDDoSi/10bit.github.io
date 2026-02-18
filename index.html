@@ -424,12 +424,12 @@
       // Tile (clickable only if there is a matching video)
       const tile = document.createElement(hasVideo ? "a" : "div");
       tile.className = hasVideo ? "tile" : "tile tile--disabled";
-      if (hasVideo) tile.href = encodeURI(`p/${slug}/`);
+      if (hasVideo) tile.href = encodeURI(`/10bit.github.io/p/${slug}/`);
 
       const img = document.createElement("img");
       img.loading = "lazy";
       img.alt = `${title} cover`;
-      img.src = encodeURI(`covers/${file}`);
+      img.src = encodeURI(`/10bit.github.io/covers/${file}`);
 
       const label = document.createElement("span");
       label.className = "tile-label";
